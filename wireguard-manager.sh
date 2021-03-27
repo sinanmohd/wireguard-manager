@@ -470,7 +470,7 @@ if [ ! -f "${WIREGUARD_CONFIG}" ]; then
       done
       case ${SERVER_PORT_SETTINGS} in
       1)
-        SERVER_PORT="51820"
+        SERVER_PORT="443"
         ;;
       2)
         until [[ "${SERVER_PORT}" =~ ^[0-9]+$ ]] && [ "${SERVER_PORT}" -ge 1024 ] && [ "${SERVER_PORT}" -le 65535 ]; do
